@@ -1,22 +1,34 @@
 /* =========================================================
-   COLORS
+   COLORS — edit only this block to change the theme
    ========================================================= */
 :root {
-  --color-background: #050608;              /* fundo da página */
-  --color-header: #2D6A4F;
-  --color-fotter: #2A2C34;
-  --color-primary: #1D5C7A;                 /* topo, botões do menu, rodapé */
-  --color-primary-hover: #3A0F16;           /* botões do menu ao passar o mouse */
-  --color-accent: #E6E7EB;                  /* destaque: cursor, linha do terminal, "apoie" */
-  --color-text: #ffffff;                    /* texto principal */
-  --color-text-muted: #6b7078;              /* subtítulos do menu */
-  --color-text-terminal: #b9bec6;           /* texto do terminal */
-  --color-text-on-primary: #e4c3c8;         /* texto secundário sobre a cor primária */
-  --color-grid-dot: rgba(255, 255, 255, 0.12); /* pontos da grade de fundo */
-  --color-overlay: rgba(0, 0, 0, 0.18);     /* caixas escuras sobre a cor primária */
+  --color-background: #050608;                 /* page background */
+  --color-header: #2D6A4F;                     /* top banner */
+  --color-footer: #2A2C34;                     /* bottom bar */
+  --color-primary: #1D5C7A;                    /* menu buttons */
+  --color-primary-hover: #3A0F16;              /* menu buttons on hover */
+  --color-accent: #E6E7EB;                     /* highlights: cursor, terminal last line, support link */
+  --color-text: #ffffff;                       /* main text */
+  --color-text-muted: #6b7078;                 /* menu subtitles */
+  --color-text-terminal: #b9bec6;              /* terminal text */
+  --color-text-on-primary: #e4c3c8;            /* secondary text over primary colour */
+  --color-grid-dot: rgba(255, 255, 255, 0.12); /* background grid dots */
+  --color-overlay: rgba(0, 0, 0, 0.18);        /* dark boxes over coloured bars */
   --color-overlay-hover: rgba(0, 0, 0, 0.35);
-  --color-border-soft: rgba(255, 255, 255, 0.3); /* borda esquerda dos links do rodapé */
+  --color-border-soft: rgba(255, 255, 255, 0.3); /* left border of footer links */
+  --color-star: #ffffff;                       /* hyperspace stars / streaks */
 }
+
+/* ---------- HYPERSPACE BACKGROUND ---------- */
+#hyperspace {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* content sits in front of the canvas */
+.topbar, .layout, .bottombar { position: relative; z-index: 1; }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -26,7 +38,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: "Share Tech Mono", "Courier New", monospace;
-  /* grade pontilhada */
+  /* dotted grid */
   background-image: radial-gradient(var(--color-grid-dot) 1.2px, transparent 1.5px);
   background-size: 125px 125px;
   background-position: 98px 62px;
@@ -36,9 +48,8 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------- TOPO ---------- */
+/* ---------- TOP BAR ---------- */
 .topbar {
-  position: relative;
   height: 93px;
   background: var(--color-header);
   clip-path: polygon(0 0, 100% 0, 100% 52%, 68% 52%, 66% 100%, 0 100%);
@@ -174,11 +185,11 @@ body {
 
 @keyframes blink { 50% { opacity: 0; } }
 
-/* ---------- RODAPÉ ---------- */
+/* ---------- BOTTOM BAR ---------- */
 .bottombar {
   height: 38px;
   flex-shrink: 0;
-  background: var(--color-fotter);
+  background: var(--color-footer);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,7 +227,7 @@ body {
   border-left-color: var(--color-accent);
 }
 
-/* ---------- RESPONSIVO ---------- */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 1100px) {
   .terminal { display: none; }
   .logo { font-size: 56px; }
