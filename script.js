@@ -98,14 +98,14 @@
   // text:  caption that is "typed" in the terminal when the slide shows
   const SLIDES = [
     {
-      src: "content/img1.jpeg",
-      title: "LOG 001 // DEPARTURE",
-      text: "Final launch window confirmed. All crew members accounted for. Oxygen reserves at 100%.",
+      src: "content/img0.jpg",
+      title: "LOG 001 // First person vision",
+      text: "The player should walk and jump in varios asteroids. The main UI have a oxygen countdown and a fuel gauge.",
     },
     {
-      src: "content/img2.jpg",
-      title: "LOG 002 // SIGNAL LOST",
-      text: "Contact with the mothership was lost at 03:14. Black box recording has started.",
+      src: "content/img1.jpeg",
+      title: "LOG 002 // Grapling hook mechanic",
+      text: "One of the main mechanics will be a grapling hook, it should be used by the player to swing between the asteroids.",
     }
   ];
 
