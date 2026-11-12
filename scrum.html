@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAST BREATH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="hyperspace" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <h1 class="logo">LAST BREATH</h1>
+    <div class="topbar-tools">
+      <span class="search-icon">&#9906;</span>
+      <span class="kbd">CTRL + /</span>
+      <span class="version">V.1.0.0</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="menu">
+      <a href="brainstorm.html" class="menu-item">
+        <span class="menu-btn"><span class="icon">&#9670;</span><span class="label">Brainstorm</span></span>
+        <span class="menu-stripe"></span>
+        <span class="menu-sub">&gt; Creative database</span>
+      </a>
+
+      <a href="index.html" class="menu-item">
+        <span class="menu-btn"><span class="icon">&#9670;</span><span class="label">Home</span></span>
+        <span class="menu-stripe"></span>
+        <span class="menu-sub">&gt; Main controll</span>
+      </a>
+
+      <a href="pitch.html" class="menu-item">
+        <span class="menu-btn"><span class="icon">&#9670;</span><span class="label">Pitch</span></span>
+        <span class="menu-stripe"></span>
+        <span class="menu-sub">&gt; Last report</span>
+      </a>
+    </nav>
+
+    <section class="terminal" id="terminal">
+      <div class="terminal-body">
+        <!-- default terminal text -->
+        <div class="terminal-text" id="terminal-text">
+          <p>SYSTEM INITIALIZED</p>
+          <p>NEXUS Unit Mk I Rev 1.0.0a</p>
+          <p class="amber">2026.11.06 MainSystemz.exe /<span class="cursor"></span></p>
+        </div>
+
+        <!-- image viewer (shown when the toggle is clicked) -->
+        <div class="viewer" id="viewer" hidden>
+          <figure class="viewer-frame" id="viewer-frame">
+            <img id="viewer-img" alt="" draggable="false">
+            <span class="viewer-fallback" id="viewer-fallback" hidden>IMAGE NOT FOUND</span>
+          </figure>
+
+          <div class="viewer-caption">
+            <h2 id="viewer-title"></h2>
+            <p id="viewer-text" aria-live="polite"></p>
+          </div>
+
+          <div class="viewer-controls">
+            <button type="button" class="viewer-btn" id="viewer-prev" aria-label="Previous image">&#9664;</button>
+            <div class="viewer-dots" id="viewer-dots"></div>
+            <button type="button" class="viewer-btn" id="viewer-next" aria-label="Next image">&#9654;</button>
+            <span class="viewer-count" id="viewer-count"></span>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="terminal-toggle" id="terminal-toggle"
+              aria-expanded="false" aria-controls="viewer" aria-label="Open image viewer">
+        <span aria-hidden="true">&#9656;</span>
+      </button>
+    </section>
+  </main>
+
+  <footer class="bottombar">
+    <a href="#" class="login"><span>&#8856;</span> LOG IN</a>
+    <div class="footer-links">
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+      <a href="#">Placeholder</a>
+      <a href="#" class="support">Placeholder</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
