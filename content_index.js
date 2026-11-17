@@ -9,18 +9,23 @@
   // text:  caption that is "typed" in the terminal when the slide shows
   const SLIDES = [
     {
-      src: "content/img0.jpg",
-      title: "LOG 001 // First person vision",
-      text: "The player should walk and jump in varios asteroids. The main UI have a oxygen countdown and a fuel gauge.",
+      src: "content/cover_art.png",
+      title: "LOG 001 // Cover Art (Working Title)",
+      text: "Last Breath is a sci-fi survival parkour game set aboard a spaceship carrying the last remnants of humanity. Explore environments with unusual physics and solve puzzles while managing essential resources such as fuel and oxygen.",
     },
     {
-      src: "content/img1.jpeg",
-      title: "LOG 002 // Grapling hook mechanic",
-      text: "One of the main mechanics will be a grapling hook, it should be used by the player to swing between the asteroids.",
+      src: "content/hook_art.png",
+      title: "LOG 002 // Gameplay Overview",
+      text: "In Last Breath, players must navigate a vast, failing spaceship using parkour mechanics, avoid a range of hazards, and solve puzzles—all while their oxygen supply steadily runs out.",
+    },
+    {
+      src: "content/usp_art.png",
+      title: "LOG 003 // Unique Selling Points",
+      text: "Last Breath offers players a tense and distinctive experience, combining first-person parkour and exploration with unusual physics. Players can also use a range of tools to aid their journey, including a grappling hook and a zero-gravity jetpack."
     }
   ];
 
-  const TYPING_SPEED = 18; // ms per character (lower = faster)
+  const TYPING_SPEED = 5; // ms per character (lower = faster)
   // -------------------------------------------------------------------
 
   const $ = (id) => document.getElementById(id);

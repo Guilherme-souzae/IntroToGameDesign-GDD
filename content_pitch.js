@@ -11,17 +11,17 @@
   const SLIDES = [
     {
       src: "content/img0.jpg",
-      title: "LOG 001 // First person vision",
-      text: "The player should walk and jump in varios asteroids. The main UI have a oxygen countdown and a fuel gauge.",
+      title: "LOG 001 // First-Person Perspective",
+      text: "The player can walk and jump across various asteroids. The main UI features an oxygen countdown and a fuel gauge.",
     },
     {
       src: "content/img1.jpeg",
-      title: "LOG 002 // Grapling hook mechanic",
-      text: "One of the main mechanics will be a grapling hook, it should be used by the player to swing between the asteroids.",
+      title: "LOG 002 // Grappling Hook Mechanic",
+      text: "One of the main mechanics is the grappling hook, which allows the player to swing between asteroids.",
     }
   ];
 
-  const TYPING_SPEED = 18; // ms per character (lower = faster)
+  const TYPING_SPEED = 5; // ms per character (lower = faster)
   // -------------------------------------------------------------------
 
   const $ = (id) => document.getElementById(id);

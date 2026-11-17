@@ -11,11 +11,6 @@
 
   <header class="topbar">
     <h1 class="logo">LAST BREATH</h1>
-    <div class="topbar-tools">
-      <span class="search-icon">&#9906;</span>
-      <span class="kbd">CTRL + /</span>
-      <span class="version">V.1.0.0</span>
-    </div>
   </header>
 
   <main class="layout">
@@ -23,7 +18,7 @@
       <a href="index.html" class="menu-item">
         <span class="menu-btn"><span class="icon">&#9670;</span><span class="label">Home</span></span>
         <span class="menu-stripe"></span>
-        <span class="menu-sub">&gt; Main controll</span>
+        <span class="menu-sub">&gt; Main control</span>
       </a>
 
       <a href="scrum.html" class="menu-item">
@@ -35,7 +30,7 @@
       <a href="pitch.html" class="menu-item">
         <span class="menu-btn"><span class="icon">&#9670;</span><span class="label">Pitch</span></span>
         <span class="menu-stripe"></span>
-        <span class="menu-sub">&gt; Last report</span>
+        <span class="menu-sub">&gt; Latest update</span>
       </a>
     </nav>
 
@@ -43,9 +38,9 @@
       <div class="terminal-body">
         <!-- default terminal text -->
         <div class="terminal-text" id="terminal-text">
-          <p>SYSTEM INITIALIZED</p>
-          <p>NEXUS Unit Mk I Rev 1.0.0a</p>
-          <p class="amber">2026.11.06 MainSystemz.exe /<span class="cursor"></span></p>
+          <p>PROJECT BRAINSTORM</p>
+          <p>Click the right arrow to continue</p>
+          <p class="amber">2026.11.06 MainSystem.exe /<span class="cursor"></span></p>
         </div>
 
         <!-- image viewer (shown when the toggle is clicked) -->
@@ -61,32 +56,30 @@
           </div>
 
           <div class="viewer-controls">
-            <button type="button" class="viewer-btn" id="viewer-prev" aria-label="Previous image">&#9664;</button>
+            <button type="button" class="viewer-btn" id="viewer-prev" aria-label="Previous slide">&#9664;</button>
             <div class="viewer-dots" id="viewer-dots"></div>
-            <button type="button" class="viewer-btn" id="viewer-next" aria-label="Next image">&#9654;</button>
+            <button type="button" class="viewer-btn" id="viewer-next" aria-label="Next slide">&#9654;</button>
             <span class="viewer-count" id="viewer-count"></span>
           </div>
         </div>
       </div>
 
       <button type="button" class="terminal-toggle" id="terminal-toggle"
-              aria-expanded="false" aria-controls="viewer" aria-label="Open image viewer">
+              aria-expanded="false" aria-controls="viewer" aria-label="Open slide viewer">
         <span aria-hidden="true">&#9656;</span>
       </button>
     </section>
   </main>
 
   <footer class="bottombar">
-    <a href="#" class="login"><span>&#8856;</span> LOG IN</a>
     <div class="footer-links">
-      <a href="#">Placeholder</a>
-      <a href="#">Placeholder</a>
-      <a href="#">Placeholder</a>
-      <a href="#">Placeholder</a>
-      <a href="#" class="support">Placeholder</a>
+      <a href="">BRAINSTORM BOARD</a>
+      <a href="#">SCRUM BOARD</a>
+      <a href="#">PITCH PRESENTATION</a>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="content_brainstorm.js"></script>
 </body>
 </html>
